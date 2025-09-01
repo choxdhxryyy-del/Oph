@@ -7,7 +7,7 @@ import os
 
 # 🔹 Load environment variables
 load_dotenv()
-TELEGRAM_TOKEN = os.getenv("7451412892:AAFMJcUiil0cPOFTQhW7x7BgbpWbuaKSrzg")
+TELEGRAM_TOKEN = os.getenv("7451412892:AAH9dpk8jIGnkZHyRWADVtzLiXhpAkBBVCw")
 GROQ_API_KEY = os.getenv("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")
 
 # 🔹 Initialize bot and Groq client
@@ -127,7 +127,7 @@ def chat(message):
     time.sleep(1)
 
     try:
-        # Groq API call with short/concise Hindi reply
+        # Groq AI call with short/concise Hindi reply
         response = client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[{"role": "user", "content": f"Reply shortly and concisely in Hindi: {text}"}],
